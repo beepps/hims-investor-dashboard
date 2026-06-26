@@ -608,6 +608,10 @@ npm run dev
 
 Open [http://localhost:5000](http://localhost:5000)
 
+### Port conflicts
+
+This project defaults to port **5000**. If you run other local apps on the same machine (e.g. the [BMNR simulator](https://github.com/beepps/bmnr-simulator)), only one can bind to 5000 at a time. Keep HIMS on **5000** and start BMNR on **5001** using its `PORT` env var.
+
 ### Environment
 No environment variables required. The dashboard is entirely self-contained with all data embedded in `App.tsx`.
 
